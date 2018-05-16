@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Retrofit2 RxJava2</string>
+    <string name="push">Push !</string>
+    <string name="enter_mobile_number">شماره موبایل</string>
+</resources>
