@@ -1,0 +1,13 @@
+#Wed Aug 01 16:39:35 IRDT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/transforms/dexMerger/debug/11
+base.2=/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/transforms/dexMerger/debug/14
+base.1=/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/transforms/dexMerger/debug/12
+base.0=/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/transforms/dexMerger/debug/13

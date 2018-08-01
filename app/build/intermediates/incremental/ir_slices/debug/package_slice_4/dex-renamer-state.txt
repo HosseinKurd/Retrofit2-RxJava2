@@ -1,0 +1,4 @@
+#Wed Aug 01 16:39:35 IRDT 2018
+base.0=/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex

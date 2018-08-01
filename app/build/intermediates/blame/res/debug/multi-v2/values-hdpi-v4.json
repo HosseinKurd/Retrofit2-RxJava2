@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/kurdia/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b7cf4a5655f94d736f11f0f4eab71d30/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 package com.hosseinkurd.sample.retrofit2rxjava2.mvp.preseter;
 
-import com.hosseinkurd.sample.retrofit2rxjava2.mvp.model.MobileRegisterMdl;
+import com.hosseinkurd.sample.retrofit2rxjava2.mvp.model.PostRequestMdl;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.util.Map;
@@ -16,11 +16,9 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public class APIClient {
-
     static Retrofit getDefaultClient() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-
         OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(15, TimeUnit.SECONDS)
                 .readTimeout(15, TimeUnit.SECONDS)
@@ -28,9 +26,8 @@ public class APIClient {
                 // .cache(new Cache(context.getCacheDir(), 10 * 1024 * 1024))
                 .addInterceptor(interceptor)
                 .build();
-
         return new Retrofit.Builder()
-                .baseUrl("http://ws.v3.abring.ir/")
+                .baseUrl("https://httpbin.org/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(client)
@@ -38,11 +35,9 @@ public class APIClient {
     }
 
     public interface APIInterface {
-
         @FormUrlEncoded
-        @POST("index.php?r=player/mobile-register")
-        Observable<MobileRegisterMdl> mobileRegister(@FieldMap Map<String, String> fields);
-
+        @POST("post")
+        Observable<PostRequestMdl> postRequest(@FieldMap Map<String, String> fields);
     }
 
 }

@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml",
+            "map": [
+                {
+                    "source": "/home/kurdia/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b7cf4a5655f94d736f11f0f4eab71d30/res/values-tl/values-tl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,224,332,449,537,643,764,843,921,1005,1114,1225,1326,1436,1553,1661,1824,1926",
+                        "endColumns": "118,107,116,87,105,120,78,77,83,108,110,100,109,116,107,162,101,83",
+                        "endOffsets": "219,327,444,532,638,759,838,916,1000,1109,1220,1321,1431,1548,1656,1819,1921,2005"
+                    }
+                },
+                {
+                    "source": "/home/kurdia/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d38c099c6afba2b883155bb7745d9755/res/values-tl/values-tl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2010",
+                        "endColumns": "100",
+                        "endOffsets": "2106"
+                    }
+                }
+            ]
+        }
+    ]
+}
