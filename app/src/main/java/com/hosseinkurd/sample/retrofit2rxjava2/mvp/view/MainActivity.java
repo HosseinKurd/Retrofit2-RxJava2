@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements PostRequestListen
     @Override
     protected void onDestroy() {
         postRequest.detachListener();
-
         super.onDestroy();
     }
 
@@ -50,15 +49,13 @@ public class MainActivity extends AppCompatActivity implements PostRequestListen
         Map<String, String> params = new HashMap<>();
         params.put("X-Developer", "Kurdia");
         params.put("Name", edtMobile.getText().toString());
-
         postRequest.postRequest(params);
-
         txtStatus.setText(String.valueOf("Request Send !"));
     }
 
     @Override
     public void onResponse(PostRequestMdl postRequestMdl) {
-        txtStatus.setText(String.format("Name : %s\nX-Developer : %s", postRequestMdl.getForm().getName(), postRequestMdl.getHeaders().getXDeveloper()));
+        txtStatus.setText(String.format("Name : %s\nX-Developer : %s", postRequestMdl.getForm().getName(), postRequestMdl.getForm().getXDeveloper()));
     }
 
     @Override

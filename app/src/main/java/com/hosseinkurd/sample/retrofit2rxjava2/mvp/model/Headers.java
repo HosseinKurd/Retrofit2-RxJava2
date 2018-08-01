@@ -39,9 +39,6 @@ public class Headers implements Parcelable {
     @SerializedName("User-Agent")
     @Expose
     private String userAgent;
-    @SerializedName("X-Developer")
-    @Expose
-    private String xDeveloper;
 
     public String getAccept() {
         return accept;
@@ -123,14 +120,6 @@ public class Headers implements Parcelable {
         this.userAgent = userAgent;
     }
 
-    public String getXDeveloper() {
-        return xDeveloper;
-    }
-
-    public void setXDeveloper(String xDeveloper) {
-        this.xDeveloper = xDeveloper;
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -148,7 +137,6 @@ public class Headers implements Parcelable {
         dest.writeString(this.origin);
         dest.writeString(this.referer);
         dest.writeString(this.userAgent);
-        dest.writeString(this.xDeveloper);
     }
 
     public Headers() {
@@ -165,7 +153,6 @@ public class Headers implements Parcelable {
         this.origin = in.readString();
         this.referer = in.readString();
         this.userAgent = in.readString();
-        this.xDeveloper = in.readString();
     }
 
     public static final Parcelable.Creator<Headers> CREATOR = new Parcelable.Creator<Headers>() {

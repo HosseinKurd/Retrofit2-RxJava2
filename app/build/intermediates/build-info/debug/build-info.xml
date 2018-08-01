@@ -5,23 +5,31 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.1.3"
-    timestamp="1533125737723"
+    timestamp="1533126961974"
     token="-7505794817273791332"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="79" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="17" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
+
+    <artifact
+        location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
@@ -84,9 +92,6 @@
         <artifact
             location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
-        <artifact
-            location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
@@ -99,7 +104,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1533125737723"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1533126961974"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kurdia/dev/android/projects/Retrofit2-RxJava2/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>

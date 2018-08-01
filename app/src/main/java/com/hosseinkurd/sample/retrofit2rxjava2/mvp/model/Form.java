@@ -1,4 +1,3 @@
-
 package com.hosseinkurd.sample.retrofit2rxjava2.mvp.model;
 
 import android.os.Parcel;
@@ -12,6 +11,21 @@ public class Form implements Parcelable {
     @SerializedName("Name")
     @Expose
     private String name;
+    @SerializedName("X-Developer")
+    @Expose
+    private String xDeveloper;
+
+    public Form() {
+    }
+
+
+    public String getXDeveloper() {
+        return xDeveloper;
+    }
+
+    public void setXDeveloper(String xDeveloper) {
+        this.xDeveloper = xDeveloper;
+    }
 
     public String getName() {
         return name;
@@ -29,16 +43,15 @@ public class Form implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
-    }
-
-    public Form() {
+        dest.writeString(this.xDeveloper);
     }
 
     protected Form(Parcel in) {
         this.name = in.readString();
+        this.xDeveloper = in.readString();
     }
 
-    public static final Parcelable.Creator<Form> CREATOR = new Parcelable.Creator<Form>() {
+    public static final Creator<Form> CREATOR = new Creator<Form>() {
         @Override
         public Form createFromParcel(Parcel source) {
             return new Form(source);
